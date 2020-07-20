@@ -1,0 +1,234 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "../variables";
+
+//Font Awesome
+@import "../font-awesome/fa-brands";
+@import "../font-awesome/fa-regular";
+@import "../font-awesome/fa-solid";
+@import "../font-awesome/fontawesome";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+[v-cloak] {
+    display: none;
+}
+
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus {
+    box-shadow: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.main-navbar {
+    background-color: #fff;
+
+    .navbar-search-form {
+        .input-group {
+            .input-group-text {
+                background: transparent;
+                border: none;
+            }
+
+            input {
+                border: none;
+                border-bottom: 1px solid $search-input-border-bg;
+                border-radius: 0;
+
+                &:focus {
+                    border-color: $active-color;
+                }
+            }
+        }
+    }
+
+    .dropdown-menu {
+        &.cart-menu {
+            left: unset;
+            right: 0;
+
+            min-width: 300px;
+
+            h1 {
+                font-size: 20px;
+                padding: 0px 10px 10px;
+                border-bottom: 1px solid #e8e7dd;
+            }
+
+            .cart-items {
+                max-height: 330px;
+                overflow-y: auto;
+
+                .cart-item {
+                    width: 100%;
+                    border-bottom: 1px dashed #e8e7dd;
+                    padding: 10px 10px 15px;
+
+                    .item-image {
+                        width: 60px;
+                        height: 60px;
+                        float: left;
+                        text-align: center;
+
+                        img {
+                            max-width: 100%;
+                            max-height: 100%;
+                            width: auto;
+                            height: auto;
+                        }
+                    }
+
+                    .item-info {
+                        margin-left: 70px;
+                        display: block;
+                        clear: both;
+                        float: left;
+                        margin-top: -60px;
+                        position: relative;
+                        width: fit-content;
+                        width: 74%;
+
+                        a {
+                            font-size: 14px;
+                            overflow: hidden;
+                            max-height: 66px;
+                            word-wrap: break-word;
+                            display: block;
+                            position: relative;
+                        }
+
+                        a.remove-item {
+                            position: absolute;
+                            right: 0px;
+                            top: 0px;
+                            font-size: 12px;
+                            display: none;
+                            transition: 0.7s;
+                            z-index: 1;
+                        }
+
+                        a:before {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            top: 50px;
+                            height: 12px;
+                            background: -webkit-linear-gradient(top,rgba(255,255,255,0),#fff 100%,#fff 10%,#fff);
+                            background: -ms-linear-gradient(top,rgba(255,255,255,0),#fff 100%,#fff 10%,#fff);
+                            background: -moz-linear-gradient(top,rgba(255,255,255,0),#fff 100%,#fff 10%,#fff);
+                            background: linear-gradient("to bottom", rgba(255,255,255,0),#fff 100%,#fff 10%,#fff);
+                            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+99&0+0,1+49 */
+                            background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 49%, rgba(255,255,255,1) 99%); /* FF3.6-15 */
+                            background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 99%); /* Chrome10-25,Safari5.1-6 */
+                            background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+                        }
+
+                        .item-info-footer {
+                            margin-top: 10px;
+
+                            p, .count {
+                                margin: 0;
+                                float: left;
+                                font-size: 14px;
+                            }
+
+                            .count {
+                                float: right;
+
+                                a {
+                                    color: #000;
+                                    font-size: 9px;
+                                    display: inline-block;
+                                }
+
+                                b {
+                                    font-size: 14px;
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .item-info {
+                            a.remove-item {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .btn-sm {
+                color: rgba(255, 255, 255, 0.8);
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.product-item {
+    transition: 0.7s;
+    position: relative;
+
+    .product-controls {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .buy-text {
+        transition: 0.7s;
+        display: none;
+    }
+
+    .price {
+        font-size: 12px;
+
+        b {
+            font-size: 17px;
+        }
+    }
+
+    &:hover {
+        -webkit-box-shadow: 0px 0px 26px -4px rgba(0, 0, 0, 0.5) !important;
+        -moz-box-shadow: 0px 0px 26px -4px rgba(0, 0, 0, 0.5) !important;
+        box-shadow: 0px 0px 26px -4px rgba(0, 0, 0, 0.5)!important;
+
+        text-decoration: none;
+        color: #000;
+
+        .buy-text {
+            display: inline-block;
+        }
+    }
+}
+
+/*
+ * Product
+ */
+
+@import "product/info";

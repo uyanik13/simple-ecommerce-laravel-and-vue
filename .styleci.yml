@@ -1,0 +1,9 @@
+preset: laravel
+disabled:
+  - unused_use
+  - single_class_element_per_statement
+finder:
+  not-name:
+    - index.php
+    - server.php
+    - _ide_helper.php

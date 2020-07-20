@@ -1,0 +1,303 @@
+.clear {
+  clear: both;
+}
+
+.site-header {
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: ease-in-out color 0.15s;
+}
+
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-header .dropdown-menu.cart-menu,
+.site-header .dropdown-menu.user-menu {
+  left: unset;
+  right: 0;
+}
+
+.site-header .dropdown-menu.cart-menu {
+  min-width: 300px;
+}
+
+.site-header .dropdown-menu.cart-menu h1 {
+  font-size: 20px;
+  padding: 0px 10px 10px;
+  border-bottom: 1px solid #e8e7dd;
+}
+
+.site-header .dropdown-menu.cart-menu .cart-items {
+  max-height: 330px;
+  overflow-y: auto;
+}
+
+.site-header .dropdown-menu.cart-menu .cart-items .cart-item {
+  width: 100%;
+  border-bottom: 1px dashed #e8e7dd;
+  padding: 10px 10px 15px;
+}
+
+.site-header .dropdown-menu.cart-menu .cart-items .cart-item .item-image {
+  width: 60px;
+  height: 60px;
+  float: left;
+  text-align: center;
+}
+
+.site-header .dropdown-menu.cart-menu .cart-items .cart-item .item-image img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.site-header .dropdown-menu.cart-menu .cart-items .cart-item .item-info {
+  margin-left: 70px;
+  display: block;
+  clear: both;
+  float: left;
+  margin-top: -60px;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.site-header .dropdown-menu.cart-menu .cart-items .cart-item .item-info a {
+  font-size: 14px;
+  overflow: hidden;
+  max-height: 66px;
+  word-wrap: break-word;
+  display: block;
+  position: relative;
+}
+
+.site-header .dropdown-menu.cart-menu .cart-items .cart-item .item-info a.remove-item {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 12px;
+  display: none;
+  transition: 0.7s;
+  z-index: 1;
+}
+
+.site-header .dropdown-menu.cart-menu .cart-items .cart-item .item-info a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  height: 12px;
+  background: linear-gradient("to bottom", rgba(255, 255, 255, 0), #fff 100%, #fff 10%, #fff);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+99&0+0,1+49 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 49%, white 99%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00ffffff", endColorstr="#ffffff",GradientType=0 );
+  /* IE6-9 */
+}
+
+.site-header .dropdown-menu.cart-menu .cart-items .cart-item .item-info .item-info-footer {
+  margin-top: 10px;
+}
+
+.site-header .dropdown-menu.cart-menu .cart-items .cart-item .item-info .item-info-footer p,
+.site-header .dropdown-menu.cart-menu .cart-items .cart-item .item-info .item-info-footer .count {
+  margin: 0;
+  float: left;
+  font-size: 14px;
+}
+
+.site-header .dropdown-menu.cart-menu .cart-items .cart-item .item-info .item-info-footer .count {
+  float: right;
+}
+
+.site-header .dropdown-menu.cart-menu .cart-items .cart-item .item-info .item-info-footer .count a {
+  color: #000;
+  font-size: 9px;
+  display: inline-block;
+}
+
+.site-header .dropdown-menu.cart-menu .cart-items .cart-item .item-info .item-info-footer .count b {
+  font-size: 14px;
+  display: inline-block;
+}
+
+.site-header .dropdown-menu.cart-menu .cart-items .cart-item:hover .item-info a.remove-item {
+  display: block;
+}
+
+.site-header .dropdown-menu.cart-menu .btn-sm {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.site-header .dropdown-menu.cart-menu .btn-sm:hover {
+  color: #fff;
+}
+
+.site-header .dropdown-menu a {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.site-header .dropdown-menu a:hover {
+  color: #000;
+}
+
+.site-header .dropdown-menu a:focus {
+  color: #fff;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type=email] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type=password] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-signup {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.form-signup .checkbox {
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.form-signup .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signup .form-control:focus {
+  z-index: 2;
+}
+
+.form-signup .btn {
+  margin-top: 20px;
+}
+
+.category-info {
+  margin-top: 50px;
+}
+
+.product-item {
+  padding: 0;
+  margin: 0 10px;
+  transition: 0.7s;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.product-item .product-img {
+  text-align: center;
+  max-height: 190px;
+  padding: 10px 0px;
+}
+
+.product-item .product-img img {
+  max-width: 100%;
+  max-height: 190px;
+}
+
+.product-item .card-footer .btn {
+  margin-left: 5px;
+}
+
+.product-item .card-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-item .product-type {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.product-item:hover {
+  box-shadow: 0px 0px 26px -4px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  color: #000;
+}
+
+.product-info {
+  margin-top: 0px;
+}
+
+.product-info .breadcrumb {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.product-info .left-side .carousel {
+  max-height: 300px;
+}
+
+.product-info .right-side .price {
+  margin-bottom: 10px;
+}
+
+.product-info .right-side .price span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.product-info .right-side .price span small {
+  font-weight: normal;
+}
+
+.product-info .right-side .price span .oldprice {
+  font-size: 17px;
+}
+

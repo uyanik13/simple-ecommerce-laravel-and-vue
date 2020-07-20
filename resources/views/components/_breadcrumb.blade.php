@@ -1,0 +1,1 @@
+{{ Breadcrumbs::render(Route::currentRouteName(), $data ?? null) }}
